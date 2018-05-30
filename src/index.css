@@ -1,0 +1,25 @@
+@import url(./assets/reset.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+:root {
+  --color-default: rgba(0, 0, 0, 0.72);
+  --color-default-faded: rgba(0, 0, 0, 0.3);
+  --color-bright: rgba(255, 255, 255, 0.72);
+  --color-bright-faded: rgba(255, 255, 255, 0.3); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4; }
+
+input,
+button {
+  all: unset; }

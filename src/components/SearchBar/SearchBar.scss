@@ -1,0 +1,47 @@
+.App-searchBar {
+  position: relative;
+
+  padding: 1.1rem 2.4rem;
+  width: 100%;
+  max-width: 25.6rem;
+  background: #f8f8f8;
+  border-radius: 3.2rem;
+
+  transition: opacity 300ms ease;
+
+  input {
+    color: var(--color-default);
+
+    &:disabled {
+      opacity: 0.52;
+    }
+
+    &::placeholder {
+      color: var(--color-default-faded);
+    }
+  }
+
+  .loader {
+    position: absolute;
+    right: 1.2rem;
+
+    display: inline-block;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid rgb(220, 220, 220);
+    border-right: 2px solid rgb(220, 220, 220);
+    width: 1.8rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,93 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.5rem;
+  margin-top: 6.4rem;
+
+  background: linear-gradient(to bottom right, #ddf9ff 0, #ffd3e2) fixed;
+  background: #fafafa;
+
+  > header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6.4rem;
+    background: rgba(255, 255, 255, 0.99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+
+    &[data-state='movie'],
+    &[data-state='actor'] {
+      .App-searchBar {
+        display: none;
+      }
+    }
+  }
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.App-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  overflow-y: scroll;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 3.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
