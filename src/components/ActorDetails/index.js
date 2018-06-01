@@ -2,7 +2,7 @@ import React from 'react';
 
 import './ActorDetails.css';
 
-const ActorDetails = ({ actor, handleBackTransition }) => (
+const ActorDetails = ({ actor }) => (
   <article className="App-actorDetails">
     <header>
       <img src={actor.details.profile_path} alt={actor.details.name} />

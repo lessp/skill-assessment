@@ -2,7 +2,7 @@ import React from 'react';
 
 import './MovieDetails.css';
 
-const MovieDetails = ({ movie, handleBackTransition, onActorSelect }) => (
+const MovieDetails = ({ movie, onActorSelect }) => (
   <article className="App-movieDetails">
     <header
       className="backdrop"
