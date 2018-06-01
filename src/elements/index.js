@@ -9,3 +9,7 @@ export const BackButton = props => (
     <img src={backBtnIcon} alt="Go back" />
   </button>
 );
+
+export const LoaderText = ({ text }) => (
+  <p className="App-loaderText">{text}</p>
+);
