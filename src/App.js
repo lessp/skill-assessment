@@ -7,6 +7,8 @@ import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
 import ActorDetails from './components/ActorDetails';
 
+import { BackButton, LoaderText } from './elements';
+
 import {
   TMDB_SEARCH_MOVIES_URL,
   movieDetailsUrl,
@@ -41,8 +43,7 @@ const movieMachine = {
     SELECT_ACTOR: 'fetchActor'
   },
   actor: {
-    BACK: 'movie',
-    SELECT_MOVIE: 'fetchMovie'
+    BACK: 'movie'
   },
   fetchActor: {
     ACTOR_SUCCESS: 'actor',
@@ -52,8 +53,6 @@ const movieMachine = {
     SEARCH: 'searching'
   }
 };
-
-const BackButton = props => <button {...props}>Back</button>;
 
 class App extends Component {
   constructor() {
@@ -212,7 +211,7 @@ class App extends Component {
   render() {
     const { currentState, query } = this.state;
 
-    const headerStatus = {
+    const backButton = {
       movie: (
         <BackButton
           onClick={() =>
@@ -235,10 +234,17 @@ class App extends Component {
       )
     }[currentState];
 
+    const searchText = {
+      searching: 'Loading movie results...',
+      fetchMovie: 'Fetching movie details...',
+      fetchActor: 'Fetching actor details...'
+    }[currentState];
+
     return (
-      <div className="App">
-        <header data-state={currentState}>
-          {headerStatus}
+      <div className="App" data-state={currentState}>
+        <LoaderText text={searchText} />
+        <header>
+          {backButton}
           <SearchBar
             onKeyUp={this.handleSearchSubmit}
             onChange={this.updateQuery}
@@ -247,13 +253,18 @@ class App extends Component {
           />
         </header>
         <main>
+          {currentState === 'error' && (
+            <p>
+              Oops, that's an error. Here are the details: {this.state.message}
+            </p>
+          )}
           {currentState === 'movies' && (
             <MovieList
               onMovieSelect={this.handleMovieSelect}
               movies={this.state.movies}
             />
           )}
-          {(currentState === 'movie' || currentState === 'actor') && (
+          {currentState === 'movie' && (
             <MovieDetails
               movie={this.state.movie}
               onActorSelect={this.handleActorSelect}
@@ -276,7 +287,8 @@ class App extends Component {
               }
             />
           )}
-          {console.log(this.state)}
+          {/* Left this in deliberately */}
+          {console.log('state: ', this.state)}
         </main>
       </div>
     );

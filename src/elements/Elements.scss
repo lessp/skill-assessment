@@ -1,0 +1,17 @@
+.App-backButton {
+  cursor: pointer;
+}
+
+.App-loaderText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 99;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

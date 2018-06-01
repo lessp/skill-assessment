@@ -1,37 +1,52 @@
 .App {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5rem;
-  margin-top: 6.4rem;
-  background: linear-gradient(to bottom right, #ddf9ff 0, #ffd3e2) fixed;
-  background: #fafafa; }
+  align-items: center; }
   .App > header {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0 2.4rem;
     height: 6.4rem;
     background: rgba(255, 255, 255, 0.99);
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-    z-index: 99; }
-    .App > header[data-state='movie'] .App-searchBar, .App > header[data-state='actor'] .App-searchBar {
-      display: none; }
+    z-index: 99;
+    transition: all 300ms ease; }
+  .App > main {
+    margin-top: 6.4rem;
+    width: 100%;
+    flex: 1; }
+    .App > main > article {
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25);
+      height: 100%; }
+  .App[data-state='movie'] .App-searchBar, .App[data-state='actor'] .App-searchBar, .App[data-state='fetchActor'] .App-searchBar {
+    display: none; }
+  .App[data-state='movie'] > main, .App[data-state='actor'] > main, .App[data-state='fetchActor'] > main {
+    max-width: 96rem; }
+  .App[data-state='idle'] > header {
+    height: 100%;
+    background-image: url("./assets/marion-michele-443964-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  @media screen and (min-width: 768px) {
+    .App > main > article {
+      height: 100%;
+      background: white; } }
 
 .strong {
   font-weight: 600; }
 
-.App-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.4); }
+.icon {
+  width: 1.6rem;
+  height: 1.6rem; }
+  .icon > {
+    fill: var(--color-default-faded); }
+
+.icon + * {
+  margin-left: 1.2rem; }
 
 h1 {
   font-size: 3.8rem;

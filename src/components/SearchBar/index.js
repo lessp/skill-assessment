@@ -7,7 +7,7 @@ const SearchBar = ({ isLoading, ...props }) => (
     <input
       disabled={isLoading}
       type="text"
-      placeholder="Search..."
+      placeholder="Search for a movie..."
       {...props}
     />
     {isLoading && <span className="loader" />}

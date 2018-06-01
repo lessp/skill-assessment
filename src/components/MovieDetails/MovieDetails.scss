@@ -1,17 +1,9 @@
 .App-movieDetails {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
   display: flex;
   flex-direction: column;
 
-  background: white;
-
   header {
     height: 60vh;
-    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -23,42 +15,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
-    .backButton {
-      position: absolute;
-      top: 2.4rem;
-      left: 2.4rem;
-      width: 3.2rem;
-      height: 3.2rem;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      border-radius: 50%;
-      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
-      background: white;
-      cursor: pointer;
-
-      transform: rotate(-180deg);
-
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: 30%;
-        left: 30%;
-        width: 40%;
-        height: 0.2rem;
-        background: var(--color-default);
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        top: 60%;
-        transform: rotate(-45deg);
-      }
-    }
 
     h3 {
       color: white;
@@ -77,7 +33,6 @@
   section {
     align-self: center;
 
-    max-width: 96rem;
     color: var(--color-default);
 
     padding: 2.4rem 2.4rem 0 2.4rem;

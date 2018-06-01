@@ -1,11 +1,22 @@
 .App-searchBar {
   position: relative;
-  padding: 1.1rem 2.4rem;
+  padding: 1.2rem 2.4rem 1.2rem 3.8rem;
+  margin: 0 auto;
   width: 100%;
   max-width: 25.6rem;
   background: #f8f8f8;
   border-radius: 3.2rem;
+  display: flex;
+  align-items: center;
   transition: opacity 300ms ease; }
+  .App-searchBar::before {
+    content: '';
+    position: absolute;
+    left: 1.2rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    mask: url("../../assets/search.svg") no-repeat;
+    background: var(--color-default-faded); }
   .App-searchBar input {
     color: var(--color-default); }
     .App-searchBar input:disabled {

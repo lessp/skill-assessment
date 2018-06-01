@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ActorDetails with dummy API-data 1`] = `
+<article
+  className="App-actorDetails"
+>
+  <header>
+    <img
+      alt="Dummy Actor Name"
+      src="dummyProfilePath.png"
+    />
+    <div>
+      <h4>
+        Dummy Actor Name
+      </h4>
+      <p>
+        <span
+          className="strong"
+        >
+          Born: 
+        </span>
+        1970-01-01
+         in 
+      </p>
+      <p>
+        <span
+          className="strong"
+        >
+          Dead: 
+        </span>
+        2000-01-01
+      </p>
+      <p>
+        Dummy biography.
+      </p>
+    </div>
+  </header>
+  <section>
+    <ul>
+      <li>
+        <p>
+          Dummy Movie Title
+           (
+          Dummy Character
+          )
+        </p>
+      </li>
+    </ul>
+  </section>
+</article>
+`;
+
+exports[`renders ActorDetails with real API-data 1`] = `
+<article
+  className="App-actorDetails"
+>
+  <header>
+    <img
+      alt="Tom Cruise"
+      src="https://image.tmdb.org/t/p/w300//3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg"
+    />
+    <div>
+      <h4>
+        Tom Cruise
+      </h4>
+      <p>
+        <span
+          className="strong"
+        >
+          Born: 
+        </span>
+        1962-07-03
+         in 
+        Syracuse, New York, USA
+      </p>
+      <p>
+        Thomas "Tom" Cruise (born Thomas Cruise Mapother IV; July 3, 1962) is an American actor and filmmaker. He has been nominated for three...
+      </p>
+    </div>
+  </header>
+  <section>
+    <ul>
+      <li>
+        <p>
+          Mission: Impossible - Rogue Nation
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Mission: Impossible
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Mission: Impossible - Ghost Protocol
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Interview with the Vampire
+           (
+          Lestat de Lioncourt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Mission: Impossible III
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Eyes Wide Shut
+           (
+          Dr. William 'Bill' Harford
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Austin Powers in Goldmember
+           (
+          Tom Cruise / Famous Austin ('Austinpussy')
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Knight and Day
+           (
+          Roy Miller
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Mission: Impossible - Fallout
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Valkyrie
+           (
+          Claus Schenk Graf von Stauffenberg
+          )
+        </p>
+      </li>
+    </ul>
+  </section>
+</article>
+`;

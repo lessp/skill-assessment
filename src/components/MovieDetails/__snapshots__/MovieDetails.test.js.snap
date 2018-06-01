@@ -1,0 +1,535 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders MovieDetails with dummy API-data 1`] = `
+<article
+  className="App-movieDetails"
+>
+  <header
+    className="backdrop"
+    style={
+      Object {
+        "backgroundImage": "url(dummyImageUrl.png)",
+      }
+    }
+  >
+    <h3>
+      Dummy Title
+      <span>
+        (
+        1970
+        )
+      </span>
+    </h3>
+  </header>
+  <section>
+    <p>
+      Dummy plot...
+    </p>
+    <div
+      className="crew"
+    >
+      <p>
+        <span>
+          Directed by: 
+        </span>
+        Dummy Director
+      </p>
+    </div>
+    <ul
+      className="cast"
+    >
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="First Actor Name"
+          src="dummyProfilePath.png"
+        />
+        <span>
+          First Actor Name
+        </span>
+        <span>
+          First Actor Character
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Second Actor Name"
+          src="dummyProfilePath_2.png"
+        />
+        <span>
+          Second Actor Name
+        </span>
+        <span>
+          Second Actor Character
+        </span>
+      </li>
+    </ul>
+  </section>
+</article>
+`;
+
+exports[`renders MovieDetails with real API-data 1`] = `
+<article
+  className="App-movieDetails"
+>
+  <header
+    className="backdrop"
+    style={
+      Object {
+        "backgroundImage": "url(/tjQHn6xW5BiB1RJ3OZIPDzIOSkF.jpg)",
+      }
+    }
+  >
+    <h3>
+      Mission: Impossible
+      <span>
+        (
+        1996
+        )
+      </span>
+    </h3>
+  </header>
+  <section>
+    <p>
+      When Ethan Hunt, the leader of a crack espionage team whose perilous operation has gone awry with no explanation, discovers that a mole has penetrated the CIA, he's surprised to learn that he's the No. 1 suspect. To clear his name, Hunt now must ferret out the real double agent and, in the process, even the score.
+    </p>
+    <div
+      className="crew"
+    >
+      <p>
+        <span>
+          Directed by: 
+        </span>
+        Brian De Palma
+      </p>
+    </div>
+    <ul
+      className="cast"
+    >
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Tom Cruise"
+          src="https://image.tmdb.org/t/p/w300//3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg"
+        />
+        <span>
+          Tom Cruise
+        </span>
+        <span>
+          Ethan Hunt
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Jon Voight"
+          src="https://image.tmdb.org/t/p/w300//c7BvyqlvqDkfkFqSBUCiR21fvTh.jpg"
+        />
+        <span>
+          Jon Voight
+        </span>
+        <span>
+          Jim Phelps
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Emmanuelle Béart"
+          src="https://image.tmdb.org/t/p/w300//dICNGDe2Sgz73Febl0TJZpEKO9f.jpg"
+        />
+        <span>
+          Emmanuelle Béart
+        </span>
+        <span>
+          Claire Phelps
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Henry Czerny"
+          src="https://image.tmdb.org/t/p/w300//vlUuasZW9mIrcnvp6IIEs1B43hT.jpg"
+        />
+        <span>
+          Henry Czerny
+        </span>
+        <span>
+          Eugene Kittridge
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Jean Reno"
+          src="https://image.tmdb.org/t/p/w300//cdsN5efCYGQWlPrj7vFlZRBTR16.jpg"
+        />
+        <span>
+          Jean Reno
+        </span>
+        <span>
+          Franz Krieger
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Ving Rhames"
+          src="https://image.tmdb.org/t/p/w300//8nS83GOu0iqxjL2Oj2DgwkAceFQ.jpg"
+        />
+        <span>
+          Ving Rhames
+        </span>
+        <span>
+          Luther Stickell
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Kristin Scott Thomas"
+          src="https://image.tmdb.org/t/p/w300//9NuZGaPn3Z1svlbF9ZkdtjgrHZo.jpg"
+        />
+        <span>
+          Kristin Scott Thomas
+        </span>
+        <span>
+          Sarah Davies
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Vanessa Redgrave"
+          src="https://image.tmdb.org/t/p/w300//hGxsPCZkwa30UE0XQdGTB9yT0jz.jpg"
+        />
+        <span>
+          Vanessa Redgrave
+        </span>
+        <span>
+          Max
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Dale Dye"
+          src="https://image.tmdb.org/t/p/w300//vQfhfRjwOHYN3Egx1SB21ResBI2.jpg"
+        />
+        <span>
+          Dale Dye
+        </span>
+        <span>
+          Frank Barnes
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Marcel Iureș"
+          src="https://image.tmdb.org/t/p/w300//5SUJOa1L2V8OVDrwpMHv8hMxx54.jpg"
+        />
+        <span>
+          Marcel Iureș
+        </span>
+        <span>
+          Alexander Golitsyn
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Ion Caramitru"
+          src="https://image.tmdb.org/t/p/w300//4WZViC9BrShbPxteZcMULYEeX6f.jpg"
+        />
+        <span>
+          Ion Caramitru
+        </span>
+        <span>
+          Zozimov
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Ingeborga Dapkūnaitė"
+          src="https://image.tmdb.org/t/p/w300//hVqzjEBJiaYp9sTJA4IXNLJtLK2.jpg"
+        />
+        <span>
+          Ingeborga Dapkūnaitė
+        </span>
+        <span>
+          Hannah Williams
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Valentina Yakunina"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          Valentina Yakunina
+        </span>
+        <span>
+          Drunken Female IMF Agent
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Marek Vašut"
+          src="https://image.tmdb.org/t/p/w300//f4fs302tc86ZJRWq46kZPmY86KF.jpg"
+        />
+        <span>
+          Marek Vašut
+        </span>
+        <span>
+          Drunken Male IMF Agent
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Nathan Osgood"
+          src="https://image.tmdb.org/t/p/w300//xinqKkQ7LErXlc25xZaWLzQuFwS.jpg"
+        />
+        <span>
+          Nathan Osgood
+        </span>
+        <span>
+          Kittridge Technician
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Emilio Estevez"
+          src="https://image.tmdb.org/t/p/w300//2NSM4zFrw3i16UYdUhfETVjqC4I.jpg"
+        />
+        <span>
+          Emilio Estevez
+        </span>
+        <span>
+          Jack Harmen
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Michael Rogers"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          Michael Rogers
+        </span>
+        <span>
+          Large man
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Keith Campbell"
+          src="https://image.tmdb.org/t/p/w300//1PQSshXQ2AgifwYbykqXEyQYmDg.jpg"
+        />
+        <span>
+          Keith Campbell
+        </span>
+        <span>
+          Fireman (uncredited)
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="John McLaughlin"
+          src="https://image.tmdb.org/t/p/w300//3o42hNwt5DXlowd8pXE32qeImBk.jpg"
+        />
+        <span>
+          John McLaughlin
+        </span>
+        <span>
+          TV Interviewer
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Karel Dobrý"
+          src="https://image.tmdb.org/t/p/w300//wPerBNkqROvNmcnhnljuyjobKkZ.jpg"
+        />
+        <span>
+          Karel Dobrý
+        </span>
+        <span>
+          Matthias
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Andreas Wisniewski"
+          src="https://image.tmdb.org/t/p/w300//uZwfBgn0GBfmfjbxA69GDXctN5W.jpg"
+        />
+        <span>
+          Andreas Wisniewski
+        </span>
+        <span>
+          Max's Companion
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Ricco Ross"
+          src="https://image.tmdb.org/t/p/w300//oxKgoS69eWyEwyZ6FdkTaevjIQA.jpg"
+        />
+        <span>
+          Ricco Ross
+        </span>
+        <span>
+          Denied Area Security Guard
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Mark Houghton"
+          src="https://image.tmdb.org/t/p/w300//cNXgbzlsbucTlj0w3PHhMDCLe0K.jpg"
+        />
+        <span>
+          Mark Houghton
+        </span>
+        <span>
+          Denied Area Security Guard
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Annabel Mullion"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          Annabel Mullion
+        </span>
+        <span>
+          Flight Attendant
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Garrick Hagon"
+          src="https://image.tmdb.org/t/p/w300//lZYitsCPzlwevNuHzqaSZMQiuUa.jpg"
+        />
+        <span>
+          Garrick Hagon
+        </span>
+        <span>
+          CNN Reporter
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Olegar Fedoro"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          Olegar Fedoro
+        </span>
+        <span>
+          Kiev Room Agent
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="David Schneider"
+          src="https://image.tmdb.org/t/p/w300//wLiB2o5hr3au6kXOtpqPuo6Sz1X.jpg"
+        />
+        <span>
+          David Schneider
+        </span>
+        <span>
+          Train Engineer
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Helen Lindsay"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          Helen Lindsay
+        </span>
+        <span>
+          Female Executive in Train
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="John Knoll"
+          src="https://image.tmdb.org/t/p/w300/null"
+        />
+        <span>
+          John Knoll
+        </span>
+        <span>
+          Passenger on Train in Tunnel (uncredited)
+        </span>
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <img
+          alt="Rolf Saxon"
+          src="https://image.tmdb.org/t/p/w300//vyi4D34Gj6FNINOF7abt1ZahFW4.jpg"
+        />
+        <span>
+          Rolf Saxon
+        </span>
+        <span>
+          CIA Analyst William Donloe
+        </span>
+      </li>
+    </ul>
+  </section>
+</article>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders MovieListItem with dummy API-data 1`] = `
+<li
+  className="App-movieListItem"
+>
+  <figure>
+    <img
+      alt="Movie Title"
+      src="dummyImageUrl.png"
+    />
+    <figcaption>
+      Movie Title
+       
+      <span>
+        (
+        1970
+        )
+      </span>
+    </figcaption>
+  </figure>
+</li>
+`;
+
+exports[`renders MovieListItem with real API-data 1`] = `
+<li
+  className="App-movieListItem"
+>
+  <figure>
+    <img
+      alt="Mission: Impossible"
+      src="/vmj2PzTLC6xJvshpq8SlaYE3gbd.jpg"
+    />
+    <figcaption>
+      Mission: Impossible
+       
+      <span>
+        (
+        1996
+        )
+      </span>
+    </figcaption>
+  </figure>
+</li>
+`;
