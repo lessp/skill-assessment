@@ -23,6 +23,11 @@
     margin-top: 6.4rem;
     width: 100%;
     flex: 1;
+
+    > article {
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25);
+      height: 100%;
+    }
   }
 
   &[data-state='movie'],
@@ -34,7 +39,6 @@
 
     > main {
       max-width: 96rem;
-      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -49,7 +53,10 @@
 
   @media screen and (min-width: 768px) {
     > main {
-      background: white;
+      > article {
+        height: 100%;
+        background: white;
+      }
     }
   }
 }
