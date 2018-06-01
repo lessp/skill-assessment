@@ -242,6 +242,7 @@ class App extends Component {
 
     return (
       <div className="App" data-state={currentState}>
+        <LoaderText text={searchText} />
         <header>
           {backButton}
           <SearchBar
@@ -289,7 +290,6 @@ class App extends Component {
           {/* Left this in deliberately */}
           {console.log('state: ', this.state)}
         </main>
-        <LoaderText text={searchText} />
       </div>
     );
   }
