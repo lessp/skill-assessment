@@ -2,18 +2,12 @@ import React from 'react';
 
 import './MovieDetails.css';
 
-const MovieDetails = ({
-  movie,
-  actor,
-  handleBackTransition,
-  onActorSelect
-}) => (
+const MovieDetails = ({ movie, handleBackTransition, onActorSelect }) => (
   <article className="App-movieDetails">
     <header
       className="backdrop"
       style={{ backgroundImage: `url(${movie.details.backdrop_path})` }}
     >
-      <span className="backButton" onClick={handleBackTransition} />
       <h3>
         {movie.details.title}
         <span>({movie.details.release_date.substring(0, 4)})</span>

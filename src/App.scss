@@ -1,32 +1,48 @@
 .App {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  padding: 2.5rem;
-  margin-top: 6.4rem;
-
-  background: linear-gradient(to bottom right, #ddf9ff 0, #ffd3e2) fixed;
-  background: #fafafa;
 
   > header {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0 2.4rem;
     height: 6.4rem;
     background: rgba(255, 255, 255, 0.99);
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     z-index: 99;
 
-    &[data-state='movie'],
-    &[data-state='actor'] {
-      .App-searchBar {
-        display: none;
-      }
+    transition: all 300ms ease;
+  }
+
+  > main {
+    margin-top: 6.4rem;
+    width: 100%;
+  }
+
+  &[data-state='movie'],
+  &[data-state='actor'],
+  &[data-state='fetchActor'] {
+    .App-searchBar {
+      display: none;
+    }
+
+    > main {
+      max-width: 96rem;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &[data-state='idle'] {
+    > header {
+      height: 100%;
+      background-image: url('./assets/marion-michele-443964-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -35,16 +51,17 @@
   font-weight: 600;
 }
 
-.App-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
 
-  overflow-y: scroll;
+  & > {
+    fill: var(--color-default-faded);
+  }
+}
 
-  background: rgba(0, 0, 0, 0.4);
+.icon + * {
+  margin-left: 1.2rem;
 }
 
 h1 {
