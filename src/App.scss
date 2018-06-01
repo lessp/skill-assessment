@@ -22,6 +22,7 @@
   > main {
     margin-top: 6.4rem;
     width: 100%;
+    flex: 1;
   }
 
   &[data-state='movie'],
@@ -33,7 +34,7 @@
 
     > main {
       max-width: 96rem;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -43,6 +44,12 @@
       background-image: url('./assets/marion-michele-443964-unsplash.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    > main {
+      background: white;
     }
   }
 }
