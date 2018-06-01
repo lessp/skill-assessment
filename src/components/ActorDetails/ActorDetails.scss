@@ -1,8 +1,4 @@
 .App-actorDetails {
-  padding: 2.4rem;
-
-  position: relative;
-
   h4 {
     font-weight: 600;
     font-size: 1.8rem;
@@ -15,7 +11,7 @@
     align-items: center;
     text-align: center;
 
-    padding-bottom: 1.2rem;
+    padding: 2.4rem 2.4rem 1.2rem 2.4rem;
     margin-bottom: 1.2rem;
     border-bottom: 1px solid #f2f2f2;
 
@@ -37,6 +33,8 @@
   }
 
   section {
+    padding: 1.2rem 2.4rem 2.4rem 2.4rem;
+
     ul {
       display: flex;
       flex-direction: column;
