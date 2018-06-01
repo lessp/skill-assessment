@@ -7,7 +7,7 @@ import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
 import ActorDetails from './components/ActorDetails';
 
-import { BackButton } from './elements';
+import { BackButton, LoaderText } from './elements';
 
 import {
   TMDB_SEARCH_MOVIES_URL,
@@ -234,6 +234,12 @@ class App extends Component {
       )
     }[currentState];
 
+    const searchText = {
+      searching: 'Loading movie results...',
+      fetchMovie: 'Fetching movie details...',
+      fetchActor: 'Fetching actor details...'
+    }[currentState];
+
     return (
       <div className="App" data-state={currentState}>
         <header>
@@ -283,6 +289,7 @@ class App extends Component {
           {/* Left this in deliberately */}
           {console.log('state: ', this.state)}
         </main>
+        <LoaderText text={searchText} />
       </div>
     );
   }
