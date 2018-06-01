@@ -22,6 +22,7 @@
         opacity: 0.82; }
   .App-movieDetails section {
     align-self: center;
+    width: 100%;
     color: var(--color-default);
     padding: 2.4rem 2.4rem 0 2.4rem; }
     .App-movieDetails section > * {
