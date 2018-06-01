@@ -1,29 +1,30 @@
-.App-actorDetails {
-  padding: 2.4rem;
-  position: relative; }
-  .App-actorDetails h4 {
-    font-weight: 600;
-    font-size: 1.8rem; }
-  .App-actorDetails header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 1.2rem;
+.App-actorDetails h4 {
+  font-weight: 600;
+  font-size: 1.8rem; }
+
+.App-actorDetails header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.4rem 2.4rem 1.2rem 2.4rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #f2f2f2; }
+  .App-actorDetails header img {
+    margin-right: 1.2rem;
     margin-bottom: 1.2rem;
-    border-bottom: 1px solid #f2f2f2; }
+    height: 25.6rem;
+    width: auto;
+    border-radius: 5px;
+    display: block; }
+  @media screen and (max-width: 420px) {
     .App-actorDetails header img {
-      margin-right: 1.2rem;
-      margin-bottom: 1.2rem;
-      height: 25.6rem;
-      width: auto;
-      border-radius: 5px;
-      display: block; }
-    @media screen and (max-width: 420px) {
-      .App-actorDetails header img {
-        height: 19.2rem;
-        margin-right: 0; } }
+      height: 19.2rem;
+      margin-right: 0; } }
+
+.App-actorDetails section {
+  padding: 1.2rem 2.4rem 2.4rem 2.4rem; }
   .App-actorDetails section ul {
     display: flex;
     flex-direction: column;
