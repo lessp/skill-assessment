@@ -8,15 +8,21 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0 2.4rem;
     height: 6.4rem;
+
     background: rgba(255, 255, 255, 0.99);
-    display: flex;
-    align-items: center;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     z-index: 99;
-
     transition: all 300ms ease;
+
+    .App-innerHeader {
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 2.4rem;
+      display: flex;
+      align-items: center;
+      max-width: 96rem;
+    }
   }
 
   > main {
@@ -30,15 +36,25 @@
     }
   }
 
+  /* State specific */
   &[data-state='movie'],
   &[data-state='actor'],
-  &[data-state='fetchActor'] {
+  &[data-state='fetchActor'],
+  &[data-state='fetchMovie'] {
     .App-searchBar {
       display: none;
     }
 
     > main {
       max-width: 96rem;
+    }
+  }
+
+  &[data-state='idle'],
+  &[data-state='movies'],
+  &[data-state='searching'] {
+    .App-backButton {
+      display: none;
     }
   }
 
@@ -69,7 +85,7 @@
   width: 1.6rem;
   height: 1.6rem;
 
-  & > {
+  > * {
     fill: var(--color-default-faded);
   }
 }
@@ -78,6 +94,7 @@
   margin-left: 1.2rem;
 }
 
+/* General */
 h1 {
   font-size: 3.8rem;
   line-height: 1;
