@@ -90,6 +90,14 @@ exports[`renders ActorDetails with real API-data 1`] = `
       </li>
       <li>
         <p>
+          Mission: Impossible II
+           (
+          Ethan Hunt
+          )
+        </p>
+      </li>
+      <li>
+        <p>
           Mission: Impossible
            (
           Ethan Hunt
@@ -114,22 +122,6 @@ exports[`renders ActorDetails with real API-data 1`] = `
       </li>
       <li>
         <p>
-          Mission: Impossible III
-           (
-          Ethan Hunt
-          )
-        </p>
-      </li>
-      <li>
-        <p>
-          Eyes Wide Shut
-           (
-          Dr. William 'Bill' Harford
-          )
-        </p>
-      </li>
-      <li>
-        <p>
           Austin Powers in Goldmember
            (
           Tom Cruise / Famous Austin ('Austinpussy')
@@ -146,7 +138,7 @@ exports[`renders ActorDetails with real API-data 1`] = `
       </li>
       <li>
         <p>
-          Mission: Impossible - Fallout
+          Mission: Impossible III
            (
           Ethan Hunt
           )
@@ -157,6 +149,14 @@ exports[`renders ActorDetails with real API-data 1`] = `
           Valkyrie
            (
           Claus Schenk Graf von Stauffenberg
+          )
+        </p>
+      </li>
+      <li>
+        <p>
+          Mission: Impossible - Fallout
+           (
+          Ethan Hunt
           )
         </p>
       </li>

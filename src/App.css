@@ -2,19 +2,24 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* State specific */ }
   .App > header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0 2.4rem;
     height: 6.4rem;
     background: rgba(255, 255, 255, 0.99);
-    display: flex;
-    align-items: center;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     z-index: 99;
     transition: all 300ms ease; }
+    .App > header .App-innerHeader {
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 2.4rem;
+      display: flex;
+      align-items: center;
+      max-width: 96rem; }
   .App > main {
     margin-top: 6.4rem;
     width: 100%;
@@ -22,10 +27,12 @@
     .App > main > article {
       box-shadow: 0 16px 24px rgba(0, 0, 0, 0.25);
       height: 100%; }
-  .App[data-state='movie'] .App-searchBar, .App[data-state='actor'] .App-searchBar, .App[data-state='fetchActor'] .App-searchBar {
+  .App[data-state='movie'] .App-searchBar, .App[data-state='actor'] .App-searchBar, .App[data-state='fetchActor'] .App-searchBar, .App[data-state='fetchMovie'] .App-searchBar {
     display: none; }
-  .App[data-state='movie'] > main, .App[data-state='actor'] > main, .App[data-state='fetchActor'] > main {
+  .App[data-state='movie'] > main, .App[data-state='actor'] > main, .App[data-state='fetchActor'] > main, .App[data-state='fetchMovie'] > main {
     max-width: 96rem; }
+  .App[data-state='idle'] .App-backButton, .App[data-state='movies'] .App-backButton, .App[data-state='searching'] .App-backButton {
+    display: none; }
   .App[data-state='idle'] > header {
     height: 100%;
     background-image: url("./assets/marion-michele-443964-unsplash.jpg");
@@ -42,12 +49,13 @@
 .icon {
   width: 1.6rem;
   height: 1.6rem; }
-  .icon > {
+  .icon > * {
     fill: var(--color-default-faded); }
 
 .icon + * {
   margin-left: 1.2rem; }
 
+/* General */
 h1 {
   font-size: 3.8rem;
   line-height: 1;

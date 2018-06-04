@@ -464,7 +464,7 @@ exports[`renders MovieDetails with real API-data 1`] = `
       >
         <img
           alt="Olegar Fedoro"
-          src="https://image.tmdb.org/t/p/w300/null"
+          src="https://image.tmdb.org/t/p/w300//kRelYwV7KgXhZeye2ZgVyJJBtHF.jpg"
         />
         <span>
           Olegar Fedoro
