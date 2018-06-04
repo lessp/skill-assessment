@@ -1,5 +1,4 @@
 @import './assets/reset.css';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
 :root {
   --color-default: rgba(0, 0, 0, 0.72);
@@ -21,18 +20,18 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
+  font: 1.4rem/1.4 'Helvetica Neue', sans-serif;
   font-size: 1.4rem;
   line-height: 1.4;
 
   background: #fafafa;
 }
 
+#root {
+  height: 100%;
+}
+
 input,
 button {
   all: unset;
-}
-
-#root {
-  height: 100%;
 }
