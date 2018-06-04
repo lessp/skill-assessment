@@ -94,23 +94,27 @@ class App extends Component {
         this.fetchActorDetails(action.payload);
         break;
       case 'movies':
-        return {
-          movies: action.payload
-        };
+        if (action.payload)
+          return {
+            movies: action.payload
+          };
       case 'movie': {
-        return {
-          movie: action.payload
-        };
+        if (action.payload)
+          return {
+            movie: action.payload
+          };
       }
       case 'actor': {
-        return {
-          actor: action.payload
-        };
+        if (action.payload)
+          return {
+            actor: action.payload
+          };
       }
       case 'error':
-        return {
-          message: action.payload
-        };
+        if (action.payload)
+          return {
+            message: action.payload
+          };
       default:
         break;
     }
@@ -211,29 +215,6 @@ class App extends Component {
   render() {
     const { currentState, query } = this.state;
 
-    const backButton = {
-      movie: (
-        <BackButton
-          onClick={() =>
-            this.transition({
-              type: 'BACK',
-              payload: this.state.movies
-            })
-          }
-        />
-      ),
-      actor: (
-        <BackButton
-          onClick={() =>
-            this.transition({
-              type: 'BACK',
-              payload: this.state.movie
-            })
-          }
-        />
-      )
-    }[currentState];
-
     const searchText = {
       searching: 'Loading movie results...',
       fetchMovie: 'Fetching movie details...',
@@ -244,13 +225,15 @@ class App extends Component {
       <div className="App" data-state={currentState}>
         <LoaderText text={searchText} />
         <header>
-          {backButton}
-          <SearchBar
-            onKeyUp={this.handleSearchSubmit}
-            onChange={this.updateQuery}
-            value={query}
-            isLoading={currentState === 'searching'}
-          />
+          <div className="App-innerHeader">
+            <BackButton onClick={() => this.transition({ type: 'BACK' })} />
+            <SearchBar
+              onKeyUp={this.handleSearchSubmit}
+              onChange={this.updateQuery}
+              value={query}
+              isLoading={currentState === 'searching'}
+            />
+          </div>
         </header>
         <main>
           {currentState === 'error' && (
