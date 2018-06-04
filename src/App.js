@@ -238,7 +238,9 @@ class App extends Component {
         <main>
           {currentState === 'error' && (
             <p>
-              Oops, that's an error. Here are the details: {this.state.message}
+              {`Oops, that's an error. Here are the details: ${
+                this.state.message
+              }`}
             </p>
           )}
           {currentState === 'movies' && (
