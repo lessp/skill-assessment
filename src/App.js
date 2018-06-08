@@ -98,23 +98,27 @@ class App extends Component {
           return {
             movies: action.payload
           };
+        break;
       case 'movie': {
         if (action.payload)
           return {
             movie: action.payload
           };
+        break;
       }
       case 'actor': {
         if (action.payload)
           return {
             actor: action.payload
           };
+        break;
       }
       case 'error':
         if (action.payload)
           return {
             message: action.payload
           };
+        break;
       default:
         break;
     }
@@ -245,32 +249,18 @@ class App extends Component {
           )}
           {currentState === 'movies' && (
             <MovieList
-              onMovieSelect={this.handleMovieSelect}
               movies={this.state.movies}
+              onMovieSelect={this.handleMovieSelect}
             />
           )}
           {currentState === 'movie' && (
             <MovieDetails
               movie={this.state.movie}
               onActorSelect={this.handleActorSelect}
-              handleBackTransition={() =>
-                this.transition({
-                  type: 'BACK',
-                  payload: this.state.movies
-                })
-              }
             />
           )}
           {currentState === 'actor' && (
-            <ActorDetails
-              actor={this.state.actor}
-              handleBackTransition={() =>
-                this.transition({
-                  type: 'BACK',
-                  payload: this.state.movie
-                })
-              }
-            />
+            <ActorDetails actor={this.state.actor} />
           )}
           {/* Left this in deliberately */}
           {console.log('state: ', this.state)}
