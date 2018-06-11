@@ -19,3 +19,12 @@ npm run build
 ```
 npm run test
 ```
+
+## Basic Wireframe
+
+![Wireframe](wireframe.png "Basic Wireframe")
+
+## State Chart
+
+![Statechart](statechart.png "State Chart")
+
